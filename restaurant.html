@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Login</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Dark Mode Switch -->
+    <div class="mode-switch" id="modeSwitch">☾</div>
+
+    <!-- Main login container -->
+    <div class="login-container" id="loginContainer">
+        <h2>Register your Organization</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" id="name" required placeholder=" " />
+                <label for="name">Restaurant Name</label>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="phone" required placeholder=" " />
+                <label for="phone">Phone</label>
+               
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="gstin" required placeholder=" " />
+                <label for="gstin">GSTIN</label>
+               
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="location" required placeholder=" " />
+                <label for="location">Location</label>
+                
+            </div>
+
+            <div class="form-group password-group">
+                <input type="password" id="password" required placeholder=" " />
+                <label for="password">Password</label>
+                <span class="toggle-password" id="togglePassword">👁️</span>
+                <div class="strength-meter" id="strengthMeter"></div>
+            </div>
+
+            <button type="submit" class="submit-btn"><a href="index.html">Register</a>
+                
+            </button>
+            <div class="progress-bar" id="progressBar"></div>
+        </form>
+        <div class="success-check" id="successCheck"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scriptsvolunteer.js"></script>
+</body>
+</html>

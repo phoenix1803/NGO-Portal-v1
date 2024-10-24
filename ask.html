@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="tell.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="mySidebar">
+        <!-- User Info Section -->
+        <div id="user-info" class="user-info">
+            <h3>Logged in as: <span id="username">Guest</span></h3>
+        </div>
+
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://www.google.com" target="_blank">
+            <i class='bx bxs-bank'></i>Money
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <i class='bx bxs-bowl-hot'></i>Food</a>
+        <a href="https://www.github.com" target="_blank">
+            <i class='bx bxs-t-shirt' ></i>Clothes</a>
+        <a href="https://www.stackoverflow.com" target="_blank">
+            <i class='bx bxs-envelope'></i>Message us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content" id="mainContent">
+        <span class="openbtn" id="openBtn" onclick="openNav()">&#9776; Open Sidebar</span>
+        <br></br>
+        <br></br>
+        <h2>Donation location</h2>
+        <img src="map.jpg" alt="ahh">
+        
+    </div>
+
+    <!-- Simulating logged-in user with JavaScript -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mainContent").style.marginLeft = "250px"; /* Pushes the content right */
+            document.getElementById("openBtn").style.display = "none"; /* Hide the open button */
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("mainContent").style.marginLeft = "0"; /* Resets the content */
+            document.getElementById("openBtn").style.display = "block"; /* Show the open button */
+        }
+
+        const loggedInUser = "great1239";
+        document.getElementById('username').textContent = loggedInUser;
+    </script>
+</body>
+</html>
+

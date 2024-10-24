@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NGO Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="logo1.png" alt="NGO Portal Logo" class="logo-img">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#" class="nav-link">Volunteer</a>
+          <ul class="dropdown-content">
+            <li><a href="back.html">Know More</a></li>
+            <li><a href="volunteer.html">Register</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">NGO</a>
+          <ul class="dropdown-content">
+            <li><a href="back2.html">Know More</a></li>
+            <li><a href="ngo.html">Register</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Organisation</a>
+          <ul class="dropdown-content">
+            <li><a href="back1.html">Know More</a></li>
+            <li><a href="restaurant.html">Register</a></li>
+          </ul>
+        </li>
+        <li><a href="abt.html" class="nav-link">About</a></li>
+        <li><a href="mrtk.html" class="nav-link">Marketplace</a></li>
+      </ul>
+      
+      <a href="#" class="login-btn" id="loginBtn">Login</a>
+    </nav>
+  </header>
+
+  <!-- Main Section with Long Image -->
+  <main>
+    <section class="main-content">
+      <img src="bg.jpg" alt="Main Image" class="main-image">
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-left">
+      <ul>
+        <li>
+          <a href="https://telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+        </li>
+        <li>
+          <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <p>    Email: support@ecofriendlymarketplace.com <br>
+        Phone: +123 456 7890 <br>
+        &copy; 2024 Eco-Friendly Marketplace. All rights reserved.</p>
+    </div>
+  </footer>
+   <!-- Login Popup Modal -->
+   <div id="loginPopup" class="login-modal">
+    <div class="login-modal-content">
+      <h2>Login</h2>
+      <label for="username" class="login-label">Username</label>
+      <input type="text" id="username" class="login-input" placeholder="Enter Username">
+
+      <label for="password" class="login-label">Password</label>
+      <input type="password" id="password" class="login-input" placeholder="Enter Password">
+
+      <a href="ask.html" class="submit-btn">Login</a>
+
+    </div>
+  </div>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
